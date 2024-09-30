@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    /*Debut menu burger*/
+    .burger{
+        @apply relative block w-full h-[2px] bg-primary-text right-2 transition-all ease-in-out duration-500;
+    }
+    .burger-b{
+        @apply relative block w-[75%] h-[2px] bg-primary-text right-2 -top-[8px] transition-all duration-500;
+    }
+    .burger-a{
+        @apply relative block w-[75%] h-[2px] bg-primary-text right-2 -bottom-[8px] transition-all ease-in-out duration-500;
+    }
+    #menu:checked ~ header nav div label .burger-b{
+        @apply transform rotate-45 w-full translate-y-[10px];
+    }
+    #menu:checked ~ header nav div label .burger {
+        @apply opacity-0;
+    }
+    #menu:checked ~ header nav div label .burger-a{
+        @apply transform -rotate-45 w-full -translate-y-[10px];
+    }
+    
+    /*Fin menu burger*/
+
+    /*Debut Menu onglets*/
+    .onglet{
+        @apply flex justify-center items-center h-[50px] text-[14px] border-b-[1px] border-[#eeeeee] w-full lg:border-none lg:block lg:relative lg:h-auto lg:w-auto xl:text-[16px];
+    }
+    #menu:checked ~ div #menu-show{
+        @apply translate-y-0;
+    }
+    /*Fin Menu onglets*/
+
+    /* Debut de la section btn */
+    .btn-black{
+        @apply bg-graybox inline-block py-[20px] px-[30px] rounded-[24px] text-[14px] leading-[0.5] transition-all duration-300;
+    }
+    .btn-primary{
+        @apply bg-primary-box inline-block py-[20px] px-[30px] rounded-[24px] text-[14px] text-white leading-[0.5] hover:bg-white hover:text-primary-text transition-all duration-300;
+    }
+    .btn-hover{
+        @apply content-['2.4K_Streaming'] absolute px-[20px] py-[10px] text-[14px] rounded-full font-semibold bottom-4 left-9 text-primary-text bg-blackbox translate-y-[150%] transition-all duration-300;
+    }
+    /* Fin de la section btn */
+}

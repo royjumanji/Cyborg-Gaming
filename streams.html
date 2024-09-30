@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <title>Cyborg - Streams</title>
+</head>
+
+<body class="font-poppins bg-blackbox">
+    <!--Debut de la partie header-->
+    <input type="checkbox" id="menu" class="hidden">
+    <header
+        class="sticky top-0 left-0 h-[80px] lg:h-[100px] px-[12px] lg:px-[64px] xl:px-[120px] 2xl:px-[140px]  bg-[#F7F7F7] lg:bg-blackbox z-[100]">
+        <!--Debut menu navigation-->
+        <nav
+            class="relative flex items-center justify-between lg:justify-between h-full pl-[15px] lg:pl-[20px] lg:pt-[10px] lg:gap-8">
+            <!--Debut Logo-->
+            <a href="./home.html" class="z-[5]"><img src="./assets/icons/logo.png" alt="Logo Cyborg"
+                    class="w-[191px]"></a>
+            <!--Fin Logo-->
+
+            <!-- Partie search -->
+            <div class="hidden lg:flex btn-black ml-2 px-[15px] py-[10px] items-center xl:relative xl:-left-2 2xl:-left-32 focus-within:border-[1px] focus-within:border-second-text"
+                id="search-bar">
+                <i class="fa-solid fa-magnifying-glass inline text-second-text text-[16px] ml-2"></i>
+                <input type="text" name="search" placeholder="Type Something"
+                    class="bg-transparent ml-2 outline-none text-second-text placeholder:text-second-text" id="search">
+            </div>
+            <!-- Fin de la partie search -->
+
+
+            <!--Debut du menu onglets-->
+            <div class="hidden lg:block lg:bg-transparent lg:w-auto">
+                <ul class="lg:flex lg:gap-8 xl:gap-10 lg:text-second-text lg:text-center">
+                    <li class="onglet hover:text-primary-text lg:flex lg:items-center transition-all duration-300">
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center hover:text-primary-text transition-all duration-300">
+                        <a href="./browse.html">Browse</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center hover:text-primary-text transition-all duration-300">
+                        <a href="./details.html">Details</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center text-primary-text transition-all duration-300">
+                        <a href="./streams.html">Streams</a>
+                    </li>
+                    <li>
+                        <a href="./profile.html"
+                            class="btn-black hover:bg-primary-box hover:text-white flex justify-center items-center gap-3 py-[10px] px-[0] w-[120px]">Profile
+                            <img src="./assets/icons/profile-header.jpg" alt="profile header"
+                                class=" rounded-full w-[30px]"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fin du menu onglets-->
+
+            <!--Debut menu burger-->
+            <div class="relative w-[30px] lg:hidden z-[5]">
+                <label for="menu" class="relative w-[30px]">
+                    <span class="burger-b"></span>
+                    <span class="burger"></span>
+                    <span class="burger-a"></span>
+                </label>
+            </div>
+            <!--Fin menu burger-->
+        </nav>
+        <!--Fin menu navigation-->
+
+    </header>
+    <!--Fin de la partie header-->
+
+    <!--Debut du menu onglets-->
+    <div class="sticky top-[80px] z-[99] left-0 w-full">
+        <input type="checkbox" id="menu" class="hidden">
+        <div class="absolute left-3 right-3 min-560:left-8 min-560:right-8 min-660:left-[90px] min-660:right-[90px] md:left-[40px] md:right-[40px] top-0 z-[99] bg-white w-auto -translate-y-full transition-all duration-300"
+            id="menu-show">
+            <ul>
+                <li class="onglet transition-all duration-300">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="onglet transition-all duration-300"><a href="./browse.html">Browse</a></li>
+                <li class="onglet transition-all duration-300"><a href="./details.html">Details</a></li>
+                <li class="onglet text-primary-text transition-all duration-300"><a href="./streams.html">Streams</a></li>
+                <li class="onglet"><a href="./profile.html">Profile
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Fin du menu onglets-->
+
+    <main class="px-[12px] min-560:px-[30px] min-660:px-[90px] md:px-[40px] lg:px-[50px] xl:px-[120px] 2xl:px-[140px]">
+        <!-- Debut de la section container -->
+        <section class="bg-graybox mt-[30px] px-[30px] md:px-[50px] lg:px-[60px] lg:py-[60px] rounded-[24px]">
+            <!-- Debut de la section browse -->
+            <section class="lg:grid lg:grid-cols-3 lg:gap-[25px]">
+                <!-- Debut Features Games -->
+                <div class="p-[30px] bg-blackbox rounded-[24px] mb-[60px] lg:col-span-2">
+                    <!-- Debut Top features games -->
+                    <div class="relative w-full">
+                        <div class="text-[20px] font-bold leading-[1.2] mb-[30px] lg:text-[34px]">
+                            <span class="text-white underline">Featured</span>
+                            <span class="text-primary-text">Games</span>
+                        </div>
+                        <div class="absolute text-[36px] text-second-text right-0 -top-[15px]">
+                            <span
+                                class="relative -right-1.5 transition-all duration-300 hover:text-primary-text cursor-pointer">‹</span>
+                            <span class=" transition-all duration-300 hover:text-primary-text cursor-pointer">›</span>
+                        </div>
+                    </div>
+                    <!-- Fin Top features games -->
+
+                    <!-- Debut cards slides -->
+                    <div class="min-660:grid min-560:grid-cols-2 min-660:gap-[25px] xl:grid-cols-3">
+                        <!-- Debut card featured 01 -->
+                        <div>
+                            <div
+                                class="relative rounded-[24px] overflow-hidden w-full before:btn-hover hover:before:translate-y-0 transition-all duration-300">
+                                <img src="./assets/images/featured-01.jpg" alt="featured 1" class="w-full">
+                            </div>
+                            <div class="flex justify-between mt-[12px]">
+                                <div class="text-white text-[15px]">
+                                    <p class="font-bold">CS-GO</p>
+                                    <p class="text-second-text">249K Downloads</p>
+                                </div>
+                                <div class=" text-white">
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <p class="text-[14px]">4.8</p>
+                                    </span>
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-download text-primary-text"></i>
+                                        <p class="text-[14px]">2.3M</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin card featured 01 -->
+
+                        <!-- Debut card featured 02 -->
+                        <div class="hidden min-660:block">
+                            <div
+                                class="relative rounded-[24px] overflow-hidden w-full before:btn-hover hover:before:translate-y-0 transition-all duration-300">
+                                <img src="./assets/images/featured-02.jpg" alt="featured 1" class="w-full">
+                            </div>
+                            <div class="flex justify-between mt-[12px]">
+                                <div class="text-white text-[15px]">
+                                    <p class="font-bold">Gamezer</p>
+                                    <p class="text-second-text">249K Downloads</p>
+                                </div>
+                                <div class=" text-white">
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <p class="text-[14px]">4.8</p>
+                                    </span>
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-download text-primary-text"></i>
+                                        <p class="text-[14px]">2.3M</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin card featured 02 -->
+
+                        <!-- Debut card featured 03 -->
+                        <div class="hidden xl:block">
+                            <div
+                                class="relative rounded-[24px] overflow-hidden w-full before:btn-hover hover:before:translate-y-0 transition-all duration-300">
+                                <img src="./assets/images/featured-03.jpg" alt="featured 1" class="w-full">
+                            </div>
+                            <div class="flex justify-between mt-[12px]">
+                                <div class="text-white text-[15px]">
+                                    <p class="font-bold">Island Rusty</p>
+                                    <p class="text-second-text">249K Downloads</p>
+                                </div>
+                                <div class=" text-white">
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <p class="text-[14px]">4.8</p>
+                                    </span>
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-download text-primary-text"></i>
+                                        <p class="text-[14px]">2.3M</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin card featured 03 -->
+                    </div>
+                    <!-- Fin cards slides -->
+                </div>
+                <!-- Fin Features Games -->
+
+                <!-- Debut Top Streamers -->
+                <div class="p-[30px] bg-blackbox rounded-[24px] mb-[60px]">
+                    <div class="text-[20px] font-bold leading-[1.2] mb-[30px] lg:text-[32px] xl:text-[34px]">
+                        <span class="text-white underline">Top</span>
+                        <span class="text-primary-text">Streamers</span>
+                    </div>
+
+                    <!-- Debut best streamers -->
+                    <div class="relative w-full">
+
+                        <!-- Debut streamer 01 -->
+                        <div class="border-b-[1px] border-second-text/20 mb-[25px] md:flex md:justify-between lg:block min-1400:flex min-1400:items-center">
+                            <div class="flex items-center mb-3">
+                                <p class="text-white font-bold mr-[10px]">01</p>
+                                <div class="rounded-[24px] w-[46px] overflow-hidden mr-[15px]">
+                                    <img src="./assets/images/avatar-01.jpg" alt="avatar 1" class="w-full">
+                                </div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <span
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <p class="text-[14px]">LahutaM</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center mb-[30px] min-1400:relative min-1400:top-2">
+                                <a href="#" class="btn-primary w-full text-center py-[15px] min-1400:px-[15px]">Follow</a>
+                            </div>
+                        </div>
+                        <!-- Fin streamer 01 -->
+
+                        <!-- Debut streamer 02 -->
+                        <div class="border-b-[1px] border-second-text/20 mb-[25px] md:flex md:justify-between lg:block min-1400:flex min-1400:items-center">
+                            <div class="flex items-center mb-3">
+                                <p class="text-white font-bold mr-[10px]">02</p>
+                                <div class="rounded-[24px] w-[46px] overflow-hidden mr-[15px]">
+                                    <img src="./assets/images/avatar-02.jpg" alt="avatar 2" class="w-full">
+                                </div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <span
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <p class="text-[14px]">Kengan</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center mb-[30px] min-1400:relative min-1400:top-2">
+                                <a href="#" class="btn-primary w-full text-center py-[15px] min-1400:px-[15px]">Follow</a>
+                            </div>
+                        </div>
+                        <!-- Fin streamer 02 -->
+
+                        <!-- Debut streamer 03 -->
+                        <div class="xl:hidden border-b-[1px] border-second-text/20 mb-[25px] lg:mb-0 min-1400:mb-[25px] lg:border-noe min-1400:border-b-[1px] min-1400:border-second-text/20 xl md:flex md:justify-between lg:block min-1400:flex min-1400:items-center">
+                            <div class="flex items-center mb-3">
+                                <p class="text-white font-bold mr-[10px]">03</p>
+                                <div class="rounded-[24px] w-[46px] overflow-hidden mr-[15px]">
+                                    <img src="./assets/images/avatar-03.jpg" alt="avatar 3" class="w-full">
+                                </div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <span
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <p class="text-[14px]">Areluwa</p>
+                                </div>
+                            </div>
+                            <div class=" flex justify-center items-center mb-[30px] lg:mb-0 min-1400:mb-[30px] min-1400:relative min-1400:top-2">
+                                <a href="#" class="btn-primary w-full text-center py-[15px] min-1400:px-[15px]">Follow</a>
+                            </div>
+                        </div>
+                        <!-- Fin streamer 03 -->
+
+                        <!-- Debut streamer 04 -->
+                        <div class="lg:hidden border-b-[1px] border-second-text/20 mb-[25px] md:flex md:justify-between lg:block min-1400:flex min-1400:items-center">
+                            <div class="flex items-center mb-3">
+                                <p class="text-white font-bold mr-[10px]">04</p>
+                                <div class="rounded-[24px] w-[46px] overflow-hidden mr-[15px]">
+                                    <img src="./assets/images/avatar-04.jpg" alt="avatar 4" class="w-full">
+                                </div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <span
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <p class="text-[14px]">Omeg</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center mb-[30px] min-1400:relative min-1400:top-2">
+                                <a href="#" class="btn-primary w-full text-center py-[15px] min-1400:px-[15px]">Follow</a>
+                            </div>
+                        </div>
+                        <!-- Fin streamer 04 -->
+
+                        <!-- Debut streamer 05 -->
+                        <div class="lg:hidden min-1400:hidden 2xl:flex md:flex md:justify-between lg:block min-1400:flex min-1400:items-center">
+                            <div class="flex items-center mb-3">
+                                <p class="text-white font-bold mr-[10px]">05</p>
+                                <div class="rounded-[24px] w-[46px] overflow-hidden mr-[15px]">
+                                    <img src="./assets/images/avatar-01.jpg" alt="avatar 5" class="w-full">
+                                </div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <span
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <p class="text-[14px]">GangTeam</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center min-1400:relative min-1400:top-2 2xl:top-2 2xl:mb-[30px]">
+                                <a href="#" class="btn-primary w-full text-center py-[15px] min-1400:px-[15px]">Follow</a>
+                            </div>
+                        </div>
+                        <!-- Fin streamer 05 -->
+                    </div>
+                    <!-- Fin best streamers -->
+                </div>
+                <!-- Fin Top Streamers -->
+            </section>
+            <!-- Fin de la section browse -->
+
+            <!-- Debut de la section most popular live stream -->
+            <section class="relative bg-blackbox p-[30px] rounded-[24px]">
+                <div class="text-[20px] font-bold leading-[1.2] mb-[30px] lg:text-[34px]">
+                    <span class="text-white underline">Most Popular</span>
+                    <span class="text-primary-text">Live Stream</span>
+                </div>
+                <div class="min-560:grid min-560:grid-cols-2 min-560:gap-[25px] lg:grid-cols-4">
+                    <!-- Debut stream 01 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-05.jpg" alt="stream 01" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-01.jpg" alt="avatar 01" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">Kengan Omeg</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">Just Talking With Fans</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 01 -->
+
+                    <!-- Debut stream 02 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-06.jpg" alt="stream 02" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-02.jpg" alt="avatar 02" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">LunataMalc</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">CS-GO 36 Hours Live Stream</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 02 -->
+
+                    <!-- Debut stream 03 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-07.jpg" alt="stream 03" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-03.jpg" alt="avatar 03" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">Areluwa</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">Maybe Nathej Allnight Chillin'</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 03 -->
+
+                    <!-- Debut stream 04 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-08.jpg" alt="stream 04" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-04.jpg" alt="avatar 04" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">NewGangTeam</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">Live Streaming Till Morning</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 04 -->
+
+                    <!-- Debut stream 05 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-01.jpg" alt="stream 05" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-01.jpg" alt="avatar 05" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">KenganC</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">Just Talking With Fans</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 05 -->
+
+                    <!-- Debut stream 06 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-02.jpg" alt="stream 06" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-02.jpg" alt="avatar 06" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">LunaMa</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">CS-GO 36 Hours Live Stream</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 06 -->
+
+                    <!-- Debut stream 07 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-03.jpg" alt="stream 07" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-03.jpg" alt="avatar 07" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">Areluwa</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">Maybe Nathej Allnight Chillin'</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 07 -->
+
+                    <!-- Debut stream 08 -->
+                    <div class="mb-[30px]">
+                        <div class="relative w-full rounded-[24px] overflow-hidden mb-5 group">
+                            <img src="./assets/images/stream-04.jpg" alt="stream 08" class="w-full">
+                            <a href="#"
+                                class="absolute top-3 right-3 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100">Live</a>
+                            <a href="#"
+                                class="block absolute bottom-3 left-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-eye"></i> 1.2K</a>
+                            <a href="#"
+                                class="block absolute bottom-3 right-6 btn-primary px-[10px] py-[10px] hover:bg-primary-box hover:text-white opacity-0 group-hover:opacity-100"><i
+                                    class="fa fa-gamepad"></i> CS-GO</a>
+                        </div>
+                        <div class="flex gap-4 w-full">
+                            <div>
+                                <div class="w-[46px] h-[46px] overflow-hidden rounded-full float-left mr-[15px]"><img
+                                        src="./assets/images/avatar-04.jpg" alt="avatar 08" class="w-full h-full"></div>
+                                <div class="text-primary-text font-semibold flex gap-2">
+                                    <div
+                                        class="flex items-center justify-center text-[13px] h-[20px] w-[20px] rounded-full text-white bg-primary-text">
+                                        <i class="fa fa-check"></i></div>
+                                    <p class="text-[14px]">GangTm</p>
+                                </div>
+                                <div class="text-white font-bold text-[20px] mt-[8px] ml-[61px]">
+                                    <h1 class="leading-[1.2]">Live Streaming Till Morning</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin stream 08 -->
+                </div>
+
+                <div class="flex justify-center">
+                    <a href="./browse.html" class="btn-primary absolute -bottom-3">Discover All Streams</a>
+                </div>
+            </section>
+            <!-- Fin de la section most popular live stream -->
+        </section>
+        <!-- Fin de la section container -->
+    </main>
+    <footer
+        class="py-[30px] px-[12px] min-560:px-[30px] min-660:px-[90px] md:px-[40px] lg:px-[50px] xl:px-[120px] 2xl:px-[140px]">
+        <div class="text-white text-[15px] text-center font-light leading-[30px]">
+            <p>Copyright &copy; 2036 Cyborg Gaming Company. All rights reserved.</p>
+            <p>Design: TemplateMo</p>
+        </div>
+    </footer>
+</body>
+
+</html>

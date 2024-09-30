@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <title>Cyborg - Home</title>
+</head>
+
+<body class="font-poppins bg-blackbox">
+    <!--Debut de la partie header-->
+    <input type="checkbox" id="menu" class="hidden">
+    <header
+        class="sticky top-0 left-0 h-[80px] lg:h-[100px] px-[12px] lg:px-[64px] xl:px-[120px] 2xl:px-[140px]  bg-[#F7F7F7] lg:bg-blackbox z-[100]">
+        <!--Debut menu navigation-->
+        <nav
+            class="relative flex items-center justify-between lg:justify-between h-full pl-[15px] lg:pl-[20px] lg:pt-[10px] lg:gap-8">
+            <!--Debut Logo-->
+            <a href="./home.html" class="z-[5]"><img src="./assets/icons/logo.png" alt="Logo Cyborg"
+                    class="w-[191px]"></a>
+            <!--Fin Logo-->
+
+            <!-- Partie search -->
+            <div class="hidden lg:flex btn-black ml-2 px-[15px] py-[10px] items-center xl:relative xl:-left-2 2xl:-left-32 focus-within:border-[1px] focus-within:border-second-text"
+                id="search-bar">
+                <i class="fa-solid fa-magnifying-glass inline text-second-text text-[16px] ml-2"></i>
+                <input type="text" name="search" placeholder="Type Something"
+                    class="bg-transparent ml-2 outline-none text-second-text placeholder:text-second-text" id="search">
+            </div>
+            <!-- Fin de la partie search -->
+
+
+            <!--Debut du menu onglets-->
+            <div class="hidden lg:block lg:bg-transparent lg:w-auto">
+                <ul class="lg:flex lg:gap-8 xl:gap-10 lg:text-second-text lg:text-center">
+                    <li class="onglet text-primary-text lg:flex lg:items-center transition-all duration-300">
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center hover:text-primary-text transition-all duration-300">
+                        <a href="./browse.html">Browse</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center hover:text-primary-text transition-all duration-300">
+                        <a href="./details.html">Details</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center hover:text-primary-text transition-all duration-300">
+                        <a href="./streams.html">Streams</a>
+                    </li>
+                    <li>
+                        <a href="./profile.html"
+                            class="btn-black hover:bg-primary-box hover:text-white flex justify-center items-center gap-3 py-[10px] px-[0] w-[120px]">Profile
+                            <img src="./assets/icons/profile-header.jpg" alt="profile header"
+                                class=" rounded-full w-[30px]"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fin du menu onglets-->
+
+            <!--Debut menu burger-->
+            <div class="relative w-[30px] lg:hidden z-[5]">
+                <label for="menu" class="relative w-[30px]">
+                    <span class="burger-b"></span>
+                    <span class="burger"></span>
+                    <span class="burger-a"></span>
+                </label>
+            </div>
+            <!--Fin menu burger-->
+        </nav>
+        <!--Fin menu navigation-->
+
+    </header>
+    <!--Fin de la partie header-->
+
+    <!--Debut du menu onglets-->
+    <div class="sticky top-[80px] z-[99] left-0 w-full">
+        <input type="checkbox" id="menu" class="hidden">
+        <div class="absolute left-3 right-3 min-560:left-8 min-560:right-8 min-660:left-[90px] min-660:right-[90px] md:left-[40px] md:right-[40px] top-0 z-[99] bg-white w-auto -translate-y-full transition-all duration-300"
+            id="menu-show">
+            <ul>
+                <li class="onglet text-primary-text transition-all duration-300">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="onglet transition-all duration-300"><a href="./browse.html">Browse</a></li>
+                <li class="onglet transition-all duration-300"><a href="./details.html">Details</a></li>
+                <li class="onglet transition-all duration-300"><a href="./streams.html">Streams</a></li>
+                <li class="onglet"><a href="./profile.html">Profile
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Fin du menu onglets-->
+
+
+    <main class="px-[12px] min-560:px-[30px] min-660:px-[90px] md:px-[40px] lg:px-[50px] xl:px-[120px] 2xl:px-[140px]">
+        <!-- Debut de la section container -->
+        <section class="bg-graybox px-[30px] md:px-[50px] lg:px-[60px] lg:py-[40px]  rounded-[24px]">
+            <!-- Debut de la section main banner -->
+            <section
+                class="bg-banner-bg bg-center bg-cover mt-[20px] py-[80px] px-[60px] md:pr-[380px] lg:pr-[600px] text-center md:text-start rounded-[24px]">
+                <div>
+                    <h6 class="text-[20px] text-white capitalize mb-[25px] leading-[1.2]">Welcome to cyborg</h6>
+                    <h4 class="text-[35px] md:text-[45px] text-white uppercase font-bold mb-[25px] leading-[1.2]"><span
+                            class="text-primary-text">Browse</span> our popular games here</h4>
+                    <a href="./browse.html" class="btn-primary justify-center">Browse Now</a>
+                </div>
+            </section>
+            <!-- Fin de la section main banner -->
+
+            <!-- Debut de la section Most popular -->
+            <section class="relative my-[60px] p-[30px] bg-blackbox rounded-[24px]">
+                <div>
+                    <h1 class="text-[20px] font-bold mb-[30px] lg:text-[34px]"><span class="text-white underline">Most
+                            Popular</span><span class="text-primary-text"> Right Now</span></h1>
+                </div>
+
+                <!-- Debut Popular games -->
+                <div
+                    class="min-560:grid min-560:grid-cols-2 min-560:gap-5 min-560:text-[14px] lg:grid-cols-4 lg:text-[16px]">
+
+                    <!-- Debut Fornite -->
+                    <div class="bg-graybox rounded-[24px] py-[30px] px-[15px] mb-[30px]">
+                        <div class="rounded-[24px] w-full overflow-hidden">
+                            <img src="./assets/images/popular-01.jpg" alt="popular 01" class="w-full">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mt-[20px] text-white">
+                                <p class="font-bold">Fortnite</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="">4.8</p>
+                                </span>
+                            </div>
+                            <div class="flex justify-between text-white">
+                                <p class="text-second-text">Sandbox</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Fornite -->
+
+                    <!-- Debut PubG -->
+                    <div class="bg-graybox rounded-[24px] py-[30px] px-[15px] mb-[30px]">
+                        <div class="rounded-[24px] overflow-hidden w-full">
+                            <img src="./assets/images/popular-02.jpg" alt="popular 01" class="w-full">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mt-[20px] text-white">
+                                <p class="font-bold">PubG</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="">4.8</p>
+                                </span>
+                            </div>
+                            <div class="flex justify-between text-white">
+                                <p class="text-second-text">Battle S</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin PubG -->
+
+                    <!-- Debut Data2 -->
+                    <div class="bg-graybox rounded-[24px] py-[30px] px-[15px] mb-[30px]">
+                        <div class="rounded-[24px] overflow-hidden">
+                            <img src="./assets/images/popular-03.jpg" alt="popular 01" class="w-full">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mt-[20px] text-white">
+                                <p class="font-bold">Data2</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="">4.8</p>
+                                </span>
+                            </div>
+                            <div class="flex justify-between text-white">
+                                <p class="text-second-text">Stream-x</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Data2 -->
+
+                    <!-- Debut CS-GO -->
+                    <div class="bg-graybox rounded-[24px] py-[30px] px-[15px] mb-[30px]">
+                        <div class="rounded-[24px] overflow-hidden">
+                            <img src="./assets/images/popular-04.jpg" alt="popular 01" class="w-full">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mt-[20px] text-white">
+                                <p class="font-bold">CS-GO</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="">4.8</p>
+                                </span>
+                            </div>
+                            <div class="flex justify-between text-white">
+                                <p class="text-second-text">Legendary</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin CS-GO -->
+
+                    <!-- Debut Double card -->
+                    <div
+                        class="bg-graybox rounded-[24px] py-[30px] px-[15px] mb-[30px] min-560:col-start-1 min-560:col-end-3 min-560:grid min-560:grid-cols-2 min-560:gap-5">
+                        <!-- Debut Mini Craft -->
+                        <div class="mb-[30px]">
+                            <div class="rounded-[24px] overflow-hidden">
+                                <img src="./assets/images/popular-05.jpg" alt="popular 01" class="w-full">
+                            </div>
+                            <div>
+                                <div class="flex justify-between mt-[20px] text-white">
+                                    <p class="font-bold">Mini craft</p>
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-star text-yellow-400"></i>
+                                        <p class="">4.8</p>
+                                    </span>
+                                </div>
+                                <div class="flex justify-between text-white">
+                                    <p class="text-second-text">Legendary</p>
+                                    <span class="flex text-[14px] gap-1">
+                                        <i class="fa fa-download text-primary-text"></i>
+                                        <p class="text-[14px]">2.3M</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Mini Craft -->
+
+                        <!-- Debut Eagles Fly -->
+                        <div class="">
+                            <div class="">
+                                <div class="rounded-[24px] overflow-hidden">
+                                    <img src="./assets/images/popular-06.jpg" alt="popular 01" class="w-full">
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mt-[20px] text-white">
+                                        <p class="font-bold">Eagles Fly</p>
+                                        <span class="flex text-[14px] gap-1">
+                                            <i class="fa fa-star text-yellow-400"></i>
+                                            <p class="">4.8</p>
+                                        </span>
+                                    </div>
+                                    <div class="flex justify-between text-white">
+                                        <p class="text-second-text">Matrix Games</p>
+                                        <span class="flex text-[14px] gap-1">
+                                            <i class="fa fa-download text-primary-text"></i>
+                                            <p class="text-[14px]">2.3M</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Eagles Fly -->
+                    </div>
+                    <!-- Fin Double card -->
+
+                    <!-- Debut Warface -->
+                    <div class="bg-graybox rounded-[24px] py-[30px] px-[15px] mb-[30px]">
+                        <div class="rounded-[24px] overflow-hidden">
+                            <img src="./assets/images/popular-07.jpg" alt="popular 01" class="w-full">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mt-[20px] text-white">
+                                <p class="font-bold">Warface</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="">4.8</p>
+                                </span>
+                            </div>
+                            <div class="flex justify-between text-white">
+                                <p class="text-second-text">Max 3D</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Warface -->
+
+                    <!-- Debut Warcraft -->
+                    <div class="bg-graybox rounded-[24px] py-[30px] px-[15px] mb-[30px]">
+                        <div class="rounded-[24px] overflow-hidden">
+                            <img src="./assets/images/popular-08.jpg" alt="popular 01" class="w-full">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mt-[20px] text-white">
+                                <p class="font-bold">Warcraft</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="">4.8</p>
+                                </span>
+                            </div>
+                            <div class="flex justify-between text-white">
+                                <p class="text-second-text">Legend</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Warcraft -->
+                </div>
+                <!-- Fin Popular games -->
+
+                <div class="flex justify-center">
+                    <a href="./browse.html" class="btn-primary absolute -bottom-3">Discover Popular</a>
+                </div>
+            </section>
+            <!-- Fin de la section Most popular -->
+
+            <!-- Debut section Gaming library -->
+            <section class="relative mt-[30px] rounded-[24px] bg-blackbox p-[30px]">
+                <div>
+                    <h1 class="text-[19px] lg:text-[34px] capitalize font-bold mb-[30px]"><span
+                            class="text-white underline">Your
+                            gaming</span> <span class="text-primary-text">library</span></h1>
+                    <!-- Debut Library one -->
+                    <div class="grid grid-cols-2 lg:grid-cols-6">
+                        <div
+                            class="col-start-1 col-end-3 md:col-end-2 w-full rounded-[24px] overflow-hidden grid place-items-center md:place-items-start">
+                            <span class="rounded-[24px] overflow-hidden w-[80px]">
+                                <img src="./assets/images/game-01.jpg" alt="game 1" class="w-full">
+                            </span>
+                        </div>
+                        <div class="mt-[30px] text-center md:text-start xl:relative">
+                            <h4
+                                class="text-white text-[15px] font-bold flex flex-col xl:absolute xl:-left-8 2xl:-left-12">
+                                Data 2 <span class="text-[14px] text-second-text font-normal mt-[5px]">Sandbox</span>
+                            </h4>
+                        </div>
+                        <div class="mt-[30px] text-center md:text-start">
+                            <h4 class="text-white text-[15px] font-bold flex flex-col">Date Added <span
+                                    class="text-[14px] text-second-text font-normal mt-[5px]">24/08/2036</span></h4>
+                        </div>
+
+                        <div class="mt-[30px] text-center md:text-start">
+                            <h4 class="text-white text-[15px] font-bold flex flex-col">Hours Played <span
+                                    class="text-[14px] text-second-text font-normal mt-[5px]">634 H 22 Mins</span></h4>
+                        </div>
+                        <div class="mt-[30px] text-center md:text-start">
+                            <h4 class="text-white text-[15px] font-bold flex flex-col">Currently <span
+                                    class="text-[14px] text-second-text font-normal mt-[5px]">Downloaded</span></h4>
+                        </div>
+
+                        <div
+                            class="col-start-1 col-end-3 md:col-start-2 lg:col-start-6 lg:col-end-7 grid place-items-center md:place-items-start lg:relative">
+                            <a href="#"
+                                class="btn-black bg-transparent text-second-text mt-[30px] border-[1px] border-second-text lg:absolute lg:-left-3">Downloaded</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-[1px] w-full bg-graybox my-[30px]"></div>
+                </div>
+                <!-- Fin Library one -->
+
+                <!-- Debut Library two -->
+                <div class="grid grid-cols-2 lg:grid-cols-6">
+                    <div
+                        class="col-start-1 col-end-3 md:col-end-2 w-full rounded-[24px] overflow-hidden grid place-items-center md:place-items-start">
+                        <span class="rounded-[24px] overflow-hidden w-[80px]">
+                            <img src="./assets/images/game-02.jpg" alt="game 1" class="w-full">
+                        </span>
+                    </div>
+                    <div class="mt-[30px] text-center md:text-start xl:relative">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col xl:absolute xl:-left-8 2xl:-left-12">
+                            Fornite <span class="text-[14px] text-second-text font-normal mt-[5px]">Sandbox</span></h4>
+                    </div>
+                    <div class="mt-[30px] text-center md:text-start">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col">Date Added <span
+                                class="text-[14px] text-second-text font-normal mt-[5px]">22/06/2036</span></h4>
+                    </div>
+
+                    <div class="mt-[30px] text-center md:text-start">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col">Hours Played <span
+                                class="text-[14px] text-second-text font-normal mt-[5px]">740 H 52 Mins</span></h4>
+                    </div>
+                    <div class="mt-[30px] text-center md:text-start">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col">Currently <span
+                                class="text-[14px] text-second-text font-normal mt-[5px]">Downloaded</span></h4>
+                    </div>
+
+                    <div
+                        class="col-start-1 col-end-3 md:col-start-2 lg:col-start-6 lg:col-end-7 grid place-items-center md:place-items-start lg:relative">
+                        <a href="#"
+                            class="btn-black bg-transparent text-primary-text mt-[30px] border-[1px] border-primary-text lg:absolute">Download</a>
+                    </div>
+                </div>
+
+                </div>
+                <div class="h-[1px] w-full bg-graybox my-[30px]"></div>
+                </div>
+                <!-- Fin Library two -->
+
+                <!-- Debut Library tree -->
+                <div class="grid grid-cols-2 lg:grid-cols-6">
+                    <div
+                        class="col-start-1 col-end-3 md:col-end-2 w-full rounded-[24px] overflow-hidden grid place-items-center md:place-items-start">
+                        <span class="rounded-[24px] overflow-hidden w-[80px]">
+                            <img src="./assets/images/game-03.jpg" alt="game 1" class="w-full">
+                        </span>
+                    </div>
+                    <div class="mt-[30px] text-center md:text-start xl:relative">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col xl:absolute xl:-left-8 2xl:-left-12">
+                            CS-GO <span class="text-[14px] text-second-text font-normal mt-[5px]">Sandbox</span></h4>
+                    </div>
+                    <div class="mt-[30px] text-center md:text-start">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col">Date Added <span
+                                class="text-[14px] text-second-text font-normal mt-[5px]">21/04/2036</span></h4>
+                    </div>
+
+                    <div class="mt-[30px] text-center md:text-start">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col">Hours Played <span
+                                class="text-[14px] text-second-text font-normal mt-[5px]">892 H 14 Mins</span></h4>
+                    </div>
+                    <div class="mt-[30px] text-center md:text-start">
+                        <h4 class="text-white text-[15px] font-bold flex flex-col">Currently <span
+                                class="text-[14px] text-second-text font-normal mt-[5px]">Downloaded</span></h4>
+                    </div>
+
+                    <div
+                        class="col-start-1 col-end-3 md:col-start-2 lg:col-start-6 lg:col-end-7 grid place-items-center md:place-items-start lg:relative">
+                        <a href="#"
+                            class="btn-black bg-transparent text-second-text mt-[30px] border-[1px] border-second-text lg:absolute lg:-left-3">Downloaded</a>
+                    </div>
+                </div>
+
+                </div>
+                <div class="h-[1px] w-full bg-graybox my-[30px]"></div>
+                </div>
+                <!-- Fin Library tree -->
+                <div class="flex justify-center">
+                    <a href="./profile.html" class="btn-primary absolute -bottom-3">View Your Library</a>
+                </div>
+
+            </section>
+            <!-- Fin section Gaming library -->
+
+        </section>
+        <!-- Fin de la section container -->
+    </main>
+
+    <footer
+        class="py-[30px] px-[12px] min-560:px-[30px] min-660:px-[90px] md:px-[40px] lg:px-[50px] xl:px-[120px] 2xl:px-[140px]">
+        <div class="text-white text-[15px] text-center font-light leading-[30px]">
+            <p>Copyright &copy; 2036 Cyborg Gaming Company. All rights reserved.</p>
+            <p>Design: TemplateMo</p>
+        </div>
+    </footer>
+</body>
+
+</html>

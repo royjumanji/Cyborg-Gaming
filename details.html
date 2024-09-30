@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <title>Cyborg - Details</title>
+</head>
+
+<body class="font-poppins bg-blackbox">
+    <!--Debut de la partie header-->
+    <input type="checkbox" id="menu" class="hidden">
+    <header
+        class="sticky top-0 left-0 h-[80px] lg:h-[100px] px-[12px] lg:px-[64px] xl:px-[120px] 2xl:px-[140px]  bg-[#F7F7F7] lg:bg-blackbox z-[100]">
+        <!--Debut menu navigation-->
+        <nav
+            class="relative flex items-center justify-between lg:justify-between h-full pl-[15px] lg:pl-[20px] lg:pt-[10px] lg:gap-8">
+            <!--Debut Logo-->
+            <a href="./home.html" class="z-[5]"><img src="./assets/icons/logo.png" alt="Logo Cyborg"
+                    class="w-[191px]"></a>
+            <!--Fin Logo-->
+
+            <!-- Partie search -->
+            <div class="hidden lg:flex btn-black ml-2 px-[15px] py-[10px] items-center xl:relative xl:-left-2 2xl:-left-32 focus-within:border-[1px] focus-within:border-second-text"
+                id="search-bar">
+                <i class="fa-solid fa-magnifying-glass inline text-second-text text-[16px] ml-2"></i>
+                <input type="text" name="search" placeholder="Type Something"
+                    class="bg-transparent ml-2 outline-none text-second-text placeholder:text-second-text" id="search">
+            </div>
+            <!-- Fin de la partie search -->
+
+
+            <!--Debut du menu onglets-->
+            <div class="hidden lg:block lg:bg-transparent lg:w-auto">
+                <ul class="lg:flex lg:gap-8 xl:gap-10 lg:text-second-text lg:text-center">
+                    <li class="onglet hover:text-primary-text lg:flex lg:items-center transition-all duration-300">
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center hover:text-primary-text transition-all duration-300">
+                        <a href="./browse.html">Browse</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center text-primary-text transition-all duration-300">
+                        <a href="./details.html">Details</a>
+                    </li>
+                    <li class="onglet lg:flex lg:items-center hover:text-primary-text transition-all duration-300">
+                        <a href="./streams.html">Streams</a>
+                    </li>
+                    <li>
+                        <a href="./profile.html"
+                            class="btn-black hover:bg-primary-box hover:text-white flex justify-center items-center gap-3 py-[10px] px-[0] w-[120px]">Profile
+                            <img src="./assets/icons/profile-header.jpg" alt="profile header"
+                                class=" rounded-full w-[30px]"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fin du menu onglets-->
+
+            <!--Debut menu burger-->
+            <div class="relative w-[30px] lg:hidden z-[5]">
+                <label for="menu" class="relative w-[30px]">
+                    <span class="burger-b"></span>
+                    <span class="burger"></span>
+                    <span class="burger-a"></span>
+                </label>
+            </div>
+            <!--Fin menu burger-->
+        </nav>
+        <!--Fin menu navigation-->
+
+    </header>
+    <!--Fin de la partie header-->
+
+    <!--Debut du menu onglets-->
+    <div class="sticky top-[80px] z-[99] left-0 w-full">
+        <input type="checkbox" id="menu" class="hidden">
+        <div class="absolute left-3 right-3 min-560:left-8 min-560:right-8 min-660:left-[90px] min-660:right-[90px] md:left-[40px] md:right-[40px] top-0 z-[99] bg-white w-auto -translate-y-full transition-all duration-300"
+            id="menu-show">
+            <ul>
+                <li class="onglet transition-all duration-300">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="onglet transition-all duration-300"><a href="./browse.html">Browse</a></li>
+                <li class="onglet text-primary-text transition-all duration-300"><a href="./details.html">Details</a>
+                </li>
+                <li class="onglet transition-all duration-300"><a href="./streams.html">Streams</a></li>
+                <li class="onglet"><a href="./profile.html">Profile
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Fin du menu onglets-->
+
+    <main class="px-[12px] min-560:px-[30px] min-660:px-[90px] md:px-[100px] lg:px-[50px] xl:px-[120px] 2xl:px-[140px]">
+        <!-- Debut de la section container -->
+        <section class="bg-graybox px-[30px] mt-[30px] md:px-[50px] lg:px-[60px] lg:py-[60px]  rounded-[24px]">
+            <!-- Debut de la section feature -->
+            <section class="grid gap-y-7 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-7 xl:h-[265.5px] 2xl:h-[309.5px]">
+                <div class="overflow-hidden rounded-[24px] w-full">
+                    <img src="./assets/images/feature-left.jpg" alt="feature left" class="w-full lg:rounded-[24px]">
+                </div>
+                <div
+                    class="w-full rounded-[24px] overflow-hidden relative grid place-items-center lg:col-start-2 lg:col-end-4">
+                    <img src="./assets/images/feature-right.jpg" alt="feature right" class="w-full">
+                    <a href="https://www.youtube.com/watch?v=r1b03uKWk_M" target="_blank"
+                        class="absolute text-primary-text grid place-items-center h-[46px] w-[46px] rounded-full bg-white"><i
+                            class="fa fa-play"></i></a>
+                </div>
+            </section>
+            <!-- Fin de la section feature -->
+
+            <!-- Debut de la section fornite details -->
+            <section>
+                <div>
+                    <h1 class="my-[60px] text-white text-[45px] uppercase text-center font-bold leading-[1.2]">Fortnite
+                        Details</h1>
+                </div>
+
+                <!-- Debut details bottom -->
+                <div class="bg-blackbox p-[30px] rounded-[24px]">
+                    <!--Debut sandbox action -->
+                    <div class="lg:flex lg:gap-[25px]">
+
+                        <div class="bg-graybox rounded-[24px] p-[30px] mb-[30px] lg:w-full">
+                            <div class="flex justify-between text-white">
+                                <p class="font-bold">Fortnite</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="">4.8</p>
+                                </span>
+                            </div>
+                            <div class="flex justify-between text-white lg">
+                                <p class="text-second-text">Sandbox</p>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="relative flex justify-around flex-wrap gap-2 p-[30px] rounded-[24px] bg-graybox mb-[30px] lg:w-full">
+                            <span class="text-[14px] text-white text-center">
+                                <i class="fa fa-star text-yellow-400 mb-[12px]"></i>
+                                <p class="">4.8</p>
+                            </span>
+                            <span class="text-[14px] text-white text-center">
+                                <i class="fa fa-download text-primary-text mb-[12px]"></i>
+                                <p class="">2.3M</p>
+                            </span>
+                            <span class="text-[14px] text-white text-center">
+                                <i class="fa fa-server text-primary-text mb-[12px]"></i>
+                                <p class="">36GB</p>
+                            </span>
+                            <span class="text-[14px] text-white text-center">
+                                <i class="fa fa-gamepad text-primary-text mb-[12px]"></i>
+                                <p class="">Action</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!--Fin sandbox action -->
+
+                    <!-- Debut box details -->
+                    <div class="lg:grid lg:grid-cols-3 lg:gap-[25px]">
+                        <div class="w-full overflow-hidden rounded-[24px] mb-[30px]">
+                            <img src="./assets/images/details-01.jpg" alt="details-01" class="w-full">
+                        </div>
+                        <div class="w-full overflow-hidden rounded-[24px] mb-[30px]">
+                            <img src="./assets/images/details-02.jpg" alt="details-02" class="w-full">
+                        </div>
+                        <div class="w-full overflow-hidden rounded-[24px] mb-[30px]">
+                            <img src="./assets/images/details-03.jpg" alt="details-03" class="w-full">
+                        </div>
+                    </div>
+                    <!-- Fin box details -->
+
+                    <!-- Debut Text details -->
+                    <div>
+                        <p class="text-second-text text-[15px] leading-[30px]">Cyborg Gaming is free HTML CSS website
+                            template provided by TemplateMo. This is Bootstrap v5.2.0
+                            layout. You can make a <a href="https://paypal.me/templatemo" target="_blank"
+                                class="text-white/80">small contribution via PayPal</a> to info [at] templatemo.com and
+                            thank you
+                            for supporting. If you want to get the PSD source files, please contact us. Lorem ipsum
+                            dolor
+                            sit consectetur es dispic dipiscingei elit, sed doers eiusmod lisum hored tempor.</p>
+                    </div>
+                    <!-- Fin Text details -->
+
+                    <!-- Debut btn details -->
+                    <div class="w-full">
+                        <a href="#"
+                            class="btn-black w-full text-center leading-[1.2] bg-transparent text-primary-text mt-[30px] border-[1px] border-primary-text hover:bg-white hover:text-primary-text hover:border-white min-560:py-[15px]">Download
+                            Fortnite Now!</a>
+                    </div>
+                    <!-- Debut btn details -->
+
+                </div>
+                <!-- Fin details bottom -->
+                <!-- Fin de la section fornite details -->
+            </section>
+
+            <!-- Debut de la section other related -->
+            <section class="relative mt-[60px] p-[30px] bg-blackbox rounded-[24px]">
+                <div>
+                    <h1 class="text-[20px] font-bold leading-[1.2] mb-[30px] lg:text-[34px]"><span
+                            class="text-white underline">Other
+                            Related</span><span class="text-primary-text"> Games</span></h1>
+                </div>
+
+                <!-- Debut Popular games -->
+                <div class="w-full lg:grid lg:grid-cols-2 lg:gap-[25px]">
+
+                    <!-- Debut game 01 -->
+                    <div class="grid grid-cols-[80px_1fr] gap-3 border-b-[1px] border-second-text/20 mb-[30px] lg:mb-0">
+                        <div class="rounded-[24px] w-[80px] overflow-hidden mb-[30px]">
+                            <img src="./assets/images/game-01.jpg" alt="game 1" class="w-full">
+                        </div>
+                        <div class="flex justify-between mt-[12px]">
+                            <div class="text-white text-[15px]">
+                                <p class="font-bold">Data 2</p>
+                                <p class="text-second-text">Sandbox</p>
+                            </div>
+                            <div class=" text-white">
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="text-[14px]">4.8</p>
+                                </span>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Fin game 01 -->
+
+                    <!-- Debut game 02 -->
+                    <div class="grid grid-cols-[80px_1fr] gap-3 border-b-[1px] border-second-text/20 mb-[30px] lg:mb-0">
+                        <div class="rounded-[24px] w-[80px] overflow-hidden mb-[30px]">
+                            <img src="./assets/images/game-02.jpg" alt="game 1" class="w-full">
+                        </div>
+                        <div class="flex justify-between mt-[12px]">
+                            <div class="text-white text-[15px]">
+                                <p class="font-bold">Data 2</p>
+                                <p class="text-second-text">Sandbox</p>
+                            </div>
+                            <div class=" text-white">
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="text-[14px]">4.8</p>
+                                </span>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Fin game 02 -->
+
+                    <!-- Debut game 03 -->
+                    <div class="grid grid-cols-[80px_1fr] gap-3 border-b-[1px] border-second-text/20 mb-[30px] lg:mb-0">
+                        <div class="rounded-[24px] w-[80px] overflow-hidden mb-[30px]">
+                            <img src="./assets/images/game-03.jpg" alt="game 1" class="w-full">
+                        </div>
+                        <div class="flex justify-between mt-[12px]">
+                            <div class="text-white text-[15px]">
+                                <p class="font-bold">Data 2</p>
+                                <p class="text-second-text">Sandbox</p>
+                            </div>
+                            <div class=" text-white">
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="text-[14px]">4.8</p>
+                                </span>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Fin game 03 -->
+
+                    <!-- Debut game 01 -->
+                    <div class="grid grid-cols-[80px_1fr] gap-3 border-b-[1px] border-second-text/20 mb-[30px] lg:mb-0">
+                        <div class="rounded-[24px] w-[80px] overflow-hidden mb-[30px]">
+                            <img src="./assets/images/game-01.jpg" alt="game 1" class="w-full">
+                        </div>
+                        <div class="flex justify-between mt-[12px]">
+                            <div class="text-white text-[15px]">
+                                <p class="font-bold">Data 2</p>
+                                <p class="text-second-text">Sandbox</p>
+                            </div>
+                            <div class=" text-white">
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="text-[14px]">4.8</p>
+                                </span>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Fin game 01 -->
+
+                    <!-- Debut game 02 -->
+                    <div class="grid grid-cols-[80px_1fr] gap-3 border-b-[1px] border-second-text/20 mb-[30px] lg:mb-0">
+                        <div class="rounded-[24px] w-[80px] overflow-hidden mb-[30px]">
+                            <img src="./assets/images/game-02.jpg" alt="game 1" class="w-full">
+                        </div>
+                        <div class="flex justify-between mt-[12px]">
+                            <div class="text-white text-[15px]">
+                                <p class="font-bold">Data 2</p>
+                                <p class="text-second-text">Sandbox</p>
+                            </div>
+                            <div class=" text-white">
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="text-[14px]">4.8</p>
+                                </span>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Fin game 02 -->
+
+                    <!-- Debut game 03 -->
+                    <div class="grid grid-cols-[80px_1fr] gap-3 border-b-[1px] border-second-text/20">
+                        <div class="rounded-[24px] w-[80px] overflow-hidden mb-[30px]">
+                            <img src="./assets/images/game-03.jpg" alt="game 1" class="w-full">
+                        </div>
+                        <div class="flex justify-between mt-[12px]">
+                            <div class="text-white text-[15px]">
+                                <p class="font-bold">Data 2</p>
+                                <p class="text-second-text">Sandbox</p>
+                            </div>
+                            <div class=" text-white">
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-star text-yellow-400"></i>
+                                    <p class="text-[14px]">4.8</p>
+                                </span>
+                                <span class="flex text-[14px] gap-1">
+                                    <i class="fa fa-download text-primary-text"></i>
+                                    <p class="text-[14px]">2.3M</p>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Fin game 03 -->
+
+                </div>
+                <!-- Debut Popular games -->
+            </section>
+            <!-- Fin de la section container -->
+    </main>
+    <footer
+        class="py-[30px] px-[12px] min-560:px-[30px] min-660:px-[90px] md:px-[40px] lg:px-[50px] xl:px-[120px] 2xl:px-[140px]">
+        <div class="text-white text-[15px] text-center font-light leading-[30px]">
+            <p>Copyright &copy; 2036 Cyborg Gaming Company. All rights reserved.</p>
+            <p>Design: TemplateMo</p>
+        </div>
+    </footer>
+</body>
+
+</html>
